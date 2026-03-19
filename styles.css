@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #D3DEFC;
+    background-color: #0f0c29;
     margin: 0;
     padding: 0;
 }
@@ -15,17 +15,25 @@ body {
     margin-top: 8px;
 }
 
-.title, .description {
+.title {
+    color: #f1f0ff;
+    margin: 0;
+}
+
+.description {
+    color: #a09dc5;
     margin: 0;
 }
 
 .scoreboard-container {
+    color: #f1f0ff;
     margin-top: 10px;
     display: flex;
     width: 500px;
     height: 200px;
-    border: 1px solid red;
+    background-color: #1a1645;
     justify-content: space-between;
+    border-radius: 12px;
 }
 
 .player-board, .middle-board, .computer-board {
@@ -33,7 +41,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid yellow;
 }
 
 .player-board {
@@ -58,29 +65,33 @@ body {
 }
 
 .message-box {
-    margin: 10px;
+    color: #f1f0ff;
+    margin-top: 20px;
     border-radius: 12px;
-    background-color: hsl(203, 85%, 82%);
+    background-color: #1a1645;
     width: 500px;
     text-align: center;
     font-size: 12px;
+    border: 3px solid #7c3aed;
 }
 
 .buttons-container {
     display: flex;
-    width: 320px;
-    height: 125px;
+    width: 400px;
+    height: 150px;
     align-items: center;
     justify-content: space-between;
 }
 
 .buttons-container button {
+    color: #f1f0ff;
     margin-top: 25px;
-    width: 85px;
+    width: 100px;
     border-radius: 5px;
-    border: none;
+    border: 3px solid #7c3aed;
     padding: 5px;
     cursor: pointer;
+    background-color: #1a1645;
 
     /* Initial positioning and smooth transition for non-animated properties */
     position: relative;
@@ -123,4 +134,21 @@ body {
 
 .buttons-container button .text {
     font-size: 12px;
+}
+
+.restart-button {
+    color: #f1f0ff;
+    background-color: #1a1645;
+    border: 3px solid #7c3aed;
+    margin-top: 25px;
+    border-radius: 12px;
+    width: 400px;
+    height: 36px;
+
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.restart-button:hover {
+    background-color: red;
+    border: 3px solid maroon;
 }

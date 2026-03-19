@@ -22,12 +22,6 @@ function getComputerChoice() {
 }
 
 function playRound(playerChoice) {
-    /* get computer choice (in strings)*/ 
-    /* compare with playerchoice*/
-    /* update message */
-    /* update counter */
-    /* return win, lose, draw */
-
     let computerChoice = getComputerChoice()
 
     if (computerChoice == "rock") {
@@ -52,17 +46,19 @@ function playRound(playerChoice) {
 }
 
 function playGame(playerChoice) {
-    if (playRound(playerChoice) == "win") {
+    const result = playRound(playerChoice);
+
+    if (result == "win") {
         playerScore += 1
         console.log(playerScore)
         updateScoreBoard()
         messageOutput.textContent = "You won the round !!!"
-    } else if (playRound(playerChoice) == "lose") {
+    } else if (result == "lose") {
         computerScore += 1
         console.log(computerScore)
         updateScoreBoard()
         messageOutput.textContent = "You lose the round !!!"
-    } else if (playRound(playerChoice) == "draw") {
+    } else if (result == "draw") {
         messageOutput.textContent = "You draw !!!"
     }
 
@@ -107,4 +103,5 @@ scissorButton.addEventListener("click", () => {
 restartButton.addEventListener("click", () => {
     /* reset */
     resetAll()
+    messageOutput.textContent = "Welcome to RockPaperScissor. Choose one to begin."
 });

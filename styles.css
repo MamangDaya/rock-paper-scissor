@@ -52,9 +52,9 @@ body {
     font-size: 40px;
 }
 
-.player-img, .computer-img {
-    width: 150px;
-    height: 100px;
+.player-output, .computer-output {
+    font-size: 48px;
+    margin: 20px;
 }
 
 .message-box {
@@ -68,16 +68,59 @@ body {
 
 .buttons-container {
     display: flex;
-    border: 1px solid red;
-    width: 370px;
-    height: 100px;
+    width: 320px;
+    height: 125px;
     align-items: center;
     justify-content: space-between;
 }
 
 .buttons-container button {
-    border:1px solid #333333;
-    width: 90px;
-    height: 70px;
-    border-radius: 14px;
+    margin-top: 25px;
+    width: 85px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+
+    /* Initial positioning and smooth transition for non-animated properties */
+    position: relative;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Smooth lifting transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons-container button:hover {
+  /* Lift effect: moves up by 5px */
+  transform: translateY(-5px);
+  /* Enhanced shadow for depth */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  /* Apply the bounce animation */
+  animation: bounce 0.6s cubic-bezier(0.2, 0.8, 0.4, 1) forwards; 
+}
+
+/* Keyframes for the bounce animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(-5px); /* Start at the lifted position */
+  }
+  30% {
+    transform: translateY(-10px); /* Move slightly higher */
+  }
+  50% {
+    transform: translateY(0); /* Drop down (hit the 'ground') */
+  }
+  70% {
+    transform: translateY(-4px); /* Bounce back up slightly */
+  }
+  100% {
+    transform: translateY(-5px); /* Settle at the final lifted position */
+  }
+}
+
+.buttons-container button .symbol {
+    font-size: 60px;
+    margin: 0;
+}
+
+.buttons-container button .text {
+    font-size: 12px;
 }

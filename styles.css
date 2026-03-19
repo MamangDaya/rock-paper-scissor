@@ -12,7 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 8px;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .title {
@@ -22,21 +23,23 @@ body {
 
 .description {
     color: #a09dc5;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 .scoreboard-container {
     color: #f1f0ff;
     margin-top: 10px;
     display: flex;
-    width: 500px;
+    width: 700px;
     height: 200px;
     background-color: #1a1645;
+    border: 3px solid #7c3aed;
     justify-content: space-between;
     border-radius: 12px;
 }
 
 .player-board, .middle-board, .computer-board {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -69,16 +72,17 @@ body {
     margin-top: 20px;
     border-radius: 12px;
     background-color: #1a1645;
-    width: 500px;
+    width: 700px;
+    height: 52px;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     border: 3px solid #7c3aed;
 }
 
 .buttons-container {
     display: flex;
-    width: 400px;
-    height: 150px;
+    width: 700px;
+    height: 200px;
     align-items: center;
     justify-content: space-between;
 }
@@ -86,7 +90,8 @@ body {
 .buttons-container button {
     color: #f1f0ff;
     margin-top: 25px;
-    width: 100px;
+    width: 180px;
+    height: 150px;
     border-radius: 5px;
     border: 3px solid #7c3aed;
     padding: 5px;
@@ -133,7 +138,7 @@ body {
 }
 
 .buttons-container button .text {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .restart-button {
@@ -143,7 +148,8 @@ body {
     margin-top: 25px;
     border-radius: 12px;
     width: 400px;
-    height: 36px;
+    height: 48px;
+    font-size: 16px;
 
     transition: background-color 0.3s ease, border 0.3s ease;
 }

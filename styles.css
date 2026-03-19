@@ -1,0 +1,83 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #D3DEFC;
+    margin: 0;
+    padding: 0;
+}
+
+.big-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.title, .description {
+    margin: 0;
+}
+
+.scoreboard-container {
+    margin-top: 10px;
+    display: flex;
+    width: 500px;
+    height: 200px;
+    border: 1px solid red;
+    justify-content: space-between;
+}
+
+.player-board, .middle-board, .computer-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid yellow;
+}
+
+.player-board {
+    width: 150px;
+}
+
+.middle-board {
+    width: 200px;
+}
+
+.computer-board {
+    width: 150px;
+}
+
+.score-output {
+    font-size: 40px;
+}
+
+.player-img, .computer-img {
+    width: 150px;
+    height: 100px;
+}
+
+.message-box {
+    margin: 10px;
+    border-radius: 12px;
+    background-color: hsl(203, 85%, 82%);
+    width: 500px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.buttons-container {
+    display: flex;
+    border: 1px solid red;
+    width: 370px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons-container button {
+    border:1px solid #333333;
+    width: 90px;
+    height: 70px;
+    border-radius: 14px;
+}

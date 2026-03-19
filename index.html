@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="big-container">
+        <h1 class="title">Rock Paper Scissor</h1>
+        <p class="description">First to 5 points Win.</p>
+        <div class="scoreboard-container">
+            <div class="player-board">
+                <h3>You</h3>
+                <img class="player-img" src="images/question.png", width="10%", height="10%">
+            </div>
+            <div class="middle-board">
+                <h3>Score</h3>
+                <h1 class="score-output"><span class="player-score">0</span> - <span class="computer-score">0</span></h1>
+            </div>
+            <div class="computer-board">
+                <h3>Computer</h3>
+                <img class="computer-img" src="images/question.png", width="10%", height="10%">
+            </div>
+        </div>
+        <div class="message-box">
+            <p class="message-output">Welcome to RockPaperScissor.</p>
+        </div>
+        <div class="buttons-container">
+            <button class="rock-button">
+                <img src="images/rock.png", width="60%", height="60%">
+            </button>
+            <button class="paper-button">
+                <img src="images/paper.png", width="60%", height="60%">
+            </button>
+            <button class="scissor-button">
+                <img src="images/scissor.png", width="60%", height="60%">
+            </button>
+        </div>
+    </div>
 </body>
 </html>
